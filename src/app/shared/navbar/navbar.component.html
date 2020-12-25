@@ -1,0 +1,154 @@
+<nav class="navbar navbar-expand-lg fixed-top " color-on-scroll="500">
+  <div class="container">
+          <a class="navbar-brand" href="https://www.creative-tim.com">Paper Kit 2 Angular</a>
+    <div class="navbar-collapse" id="navbarToggler">
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect>Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
+              </li>
+              <!-- Dropdown -->
+              <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                  Basic dropdown<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+                  <div class="divider dropdown-divider"></div>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+                </div>
+              </li>
+        
+            </ul>
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link waves-light" mdbWavesEffect> Contact<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect> Settings</a>
+              </li>
+        
+              <!-- Dropdown -->
+              <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                   Profile<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">My account</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Log out</a>
+                </div>
+              </li>
+            </ul>
+            <!-- Links -->
+        
+      </div>
+  </div>
+</nav>
+
+<mdb-carousel [isControls]="true" class="carousel slide" [animation]="'slide'">
+  <mdb-carousel-item>
+    <div class="view">
+      <video class="video-fluid" autoplay loop>
+        <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+      </video>
+      <div class="mask rgba-indigo-light waves-light" mdbWavesEffect></div>
+    </div>
+
+    <div class="carousel-caption">
+      <div class="animated fadeInDown delay-1s">
+        <h3 class="h3-responsive">Light mask</h3>
+        <p>First text</p>
+      </div>
+    </div>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <div class="view">
+      <video class="video-fluid" autoplay loop>
+        <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
+      </video>
+      <div class="mask rgba-purple-slight waves-light" mdbWavesEffect></div>
+    </div>
+
+    <div class="carousel-caption">
+      <div class="animated fadeInDown delay-1s">
+        <h3 class="h3-responsive">Super light mask</h3>
+        <p>Secondary text</p>
+      </div>
+    </div>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <div class="view">
+      <video class="video-fluid" autoplay loop>
+        <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+      </video>
+      <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+    </div>
+
+    <div class="carousel-caption">
+      <div class="animated fadeInDown delay-1s">
+        <h3 class="h3-responsive">Strong mask</h3>
+        <p>Third text</p>
+      </div>
+    </div>
+  </mdb-carousel-item>
+</mdb-carousel>
+<!-- Card -->
+<div style="flex: 1; height: 500;">
+<mdb-card>
+  <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+    <!-- Card img -->
+    <mdb-card-img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap"></mdb-card-img>
+    <a>
+      <div class="mask"></div>
+    </a>
+  </div>
+  <!--Card content-->
+  
+  <mdb-card-body >
+    <!--Title-->
+    <mdb-card-title>
+      <h4>Card Title</h4>
+    </mdb-card-title>
+
+    <!--Text-->
+    <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+      content.
+    </mdb-card-text>
+
+    <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+  </mdb-card-body>
+</mdb-card>
+<!-- Card -->
+<!-- Card -->
+<mdb-card>
+  <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+    <!-- Card img -->
+    <mdb-card-img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap"></mdb-card-img>
+    <a>
+      <div class="mask"></div>
+    </a>
+  </div>
+  <!--Card content-->
+  <mdb-card-body>
+    <!--Title-->
+    <mdb-card-title>
+      <h4>Card Title</h4>
+    </mdb-card-title>
+
+    <!--Text-->
+    <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+      content.
+    </mdb-card-text>
+
+    <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+  </mdb-card-body>
+</mdb-card>
+<!-- Card -->
+</div>
