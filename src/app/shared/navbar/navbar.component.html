@@ -1,83 +1,40 @@
-<nav class="navbar navbar-expand-lg ">
- 
-      <a class="navbar-brand" href="#">MoviesCLUB</a>
-      <button class="navbar-toggler navbar-toggler-right burger-menu" type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg">
+
+    <a class="navbar-brand ml-4" href="#">MoviesCLUB</a>
+    <button class="navbar-toggler navbar-toggler-right burger-menu" type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-bar"></span>
           <span class="navbar-toggler-bar"></span>
           <span class="navbar-toggler-bar"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbar-primary">
+    <div class="collapse navbar-collapse" id="navbar-primary">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link waves-light" mdbWavesEffect>Movies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link waves-light" mdbWavesEffect>TV Shows</a>
-          </li>
+            <li class="nav-item active">
+                <a class="nav-link waves-light" href="#" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" href="#" mdbWavesEffect>Movies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" href="#" mdbWavesEffect>TV Shows</a>
+            </li>
         </ul>
-        <form class="form-inline waves-light" mdbWavesEffect>
-          <div class="md-form mt-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          </div>
-        </form>
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="nc-icon nc-compass-05" aria-hidden="true"></i>&nbsp;Discover</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="nc-icon nc-single-02" aria-hidden="true"></i>&nbsp;Profile</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="nc-icon nc-settings-gear-65" aria-hidden="true"></i>&nbsp;Settings</a>
-              </li>
-          </ul>
-      </div>
-   
+        <div fxLayout="row wrap" fxLayoutGap="30px grid" class="mr-2">
+            <form class="form-inline waves-light  ml-auto" mdbWavesEffect>
+                <div class="md-form mt-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                </div>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="nc-icon nc-compass-05" aria-hidden="true"></i>&nbsp;Discover</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="nc-icon nc-single-02" aria-hidden="true"></i>&nbsp;Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="nc-icon nc-settings-gear-65" aria-hidden="true"></i>&nbsp;Settings</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
-<div >
-<mdb-carousel [isControls]="true" class="carousel slide" [animation]="'slide'">
-  <mdb-carousel-item>
-    <div class="view">
-      <img src="assets/img/m1.jpg"/>
-
-      <div class="mask rgba-indigo-light waves-light" mdbWavesEffect></div>
-    </div>
-
-    <div class="carousel-caption">
-      <div class="animated fadeInDown delay-1s">
-        <h3 class="h3-responsive">Light mask</h3>
-        <p>First text</p>
-      </div>
-    </div>
-  </mdb-carousel-item>
-  <mdb-carousel-item>
-    <div class="view">
-      <img src="assets/img/m1.jpg"/>
-      <div class="mask rgba-purple-slight waves-light" mdbWavesEffect></div>
-    </div>
-
-    <div class="carousel-caption">
-      <div class="animated fadeInDown delay-1s">
-        <h3 class="h3-responsive">Super light mask</h3>
-        <p>Secondary text</p>
-      </div>
-    </div>
-  </mdb-carousel-item>
-  <mdb-carousel-item>
-    <div class="view">
-      <img src="assets/img/m1.jpg"/>
-      <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
-    </div>
-
-    <div class="carousel-caption">
-      <div class="animated fadeInDown delay-1s">
-        <h3 class="h3-responsive">Strong mask</h3>
-        <p>Third text</p>
-      </div>
-    </div>
-  </mdb-carousel-item>
-</mdb-carousel>
-</div>

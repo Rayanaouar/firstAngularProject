@@ -12,13 +12,15 @@ import { MatCardModule} from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import {MovieCardComponent} from './homeComponents/movie-card/movie-card.component';
+import { MovieCarouselComponent } from './homeComponents/movie-carousel/movie-carousel.component';
 
  
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    MovieCardComponent
+    MovieCardComponent,
+    MovieCarouselComponent
   ],
   imports: [
     FontAwesomeModule,
