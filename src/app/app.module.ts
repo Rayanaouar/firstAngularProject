@@ -16,6 +16,8 @@ import { MovieCarouselComponent } from './homeComponents/movie-carousel/movie-ca
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './shared/footer/footer.component';
 import { PopularPersonComponent } from './homeComponents/popular-person/popular-person.component';
+import { MoviesService} from "./services/movies.service";
+import { HttpClientModule } from '@angular/common/http';
 
  
 @NgModule({
@@ -37,10 +39,11 @@ import { PopularPersonComponent } from './homeComponents/popular-person/popular-
     MatToolbarModule,
     MatButtonModule,
     FlexLayoutModule,
+    HttpClientModule,
     NgbModule
 
   ],
-  providers: [],
+  providers: [MoviesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

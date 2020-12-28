@@ -35,13 +35,12 @@
 
 .title{
 
-
- 
   text-transform: uppercase;
-
   font-weight: 900;
-  font-size: 3em;
+  font-size: 4em;
 	background: linear-gradient(to right, #240b36 30%,  #c31432 60%);
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+
 }

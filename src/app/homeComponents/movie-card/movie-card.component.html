@@ -2,7 +2,7 @@
 <div class="ml-4 mr-4">
 <div class="content">
   <div fxLayout="row wrap" fxLayoutGap="16px grid">
-    <div fxFlex="25%" *ngFor="let num of [1,2,3,4,5,6,7]">
+    <div fxFlex="25%" *ngFor="let movie of movies">
         <!-- Card -->
 <mdb-card  >
   <div class="view rgba-white-slight waves-light" mdbWavesEffect>
@@ -16,7 +16,7 @@
   <mdb-card-body class="text-center">
     <!--Title-->
     <mdb-card-title>
-      <h4 style="text-align: center;">Card Title</h4>
+      <h4 style="text-align: center;">{{movies.title}}</h4>
     </mdb-card-title>
 
     <!--Text-->

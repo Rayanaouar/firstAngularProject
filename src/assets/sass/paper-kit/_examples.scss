@@ -2,6 +2,7 @@
     margin-bottom: 0;
 }
 .page-header{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #B2AFAB;
     background-position: center center;
     background-size: cover;
@@ -181,8 +182,8 @@
 }
 
 .presentation-title{
-    font-size: 4em;
-    font-weight: 700;
+    font-size: 3em;
+    font-weight: 550;
     margin: 0;
     color: #FFFFFF;
     // background: #fbf8ec;
