@@ -13,6 +13,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import {MovieCardComponent} from './homeComponents/movie-card/movie-card.component';
 import { MovieCarouselComponent } from './homeComponents/movie-carousel/movie-carousel.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './shared/footer/footer.component';
+import { PopularPersonComponent } from './homeComponents/popular-person/popular-person.component';
 
  
 @NgModule({
@@ -20,7 +23,9 @@ import { MovieCarouselComponent } from './homeComponents/movie-carousel/movie-ca
     AppComponent,
     NavbarComponent,
     MovieCardComponent,
-    MovieCarouselComponent
+    MovieCarouselComponent,
+    FooterComponent,
+    PopularPersonComponent
   ],
   imports: [
     FontAwesomeModule,
@@ -31,7 +36,9 @@ import { MovieCarouselComponent } from './homeComponents/movie-carousel/movie-ca
     MatCardModule,
     MatToolbarModule,
     MatButtonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgbModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

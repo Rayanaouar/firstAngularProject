@@ -7,7 +7,8 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
     styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
- 
+    navbarCollapsed = true;
+
 
     constructor() {
         
