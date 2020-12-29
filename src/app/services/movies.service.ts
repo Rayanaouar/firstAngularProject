@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from '../../environments/environment'
 import { Observable } from 'rxjs';
 
-import { Movie } from './movie';
+import { Movie } from '../models/movie';
 
 
 @Injectable({
@@ -14,9 +14,10 @@ export class MoviesService {
   key: string = environment.key
   constructor(private http: HttpClient) {
 }
-  getPopularMovie(): Observable<Movie[]> {
-    return this.http.get<Movie[]>(`${this.url}/movie/popular?api_key=${this.key}&language=fr`)
+  getPopularMovie(): Observable<any>{
+    return this.http.get(`${this.url}/movie/popular?api_key=${this.key}&language=fr&page=1`)
     
     
 }
+
 }

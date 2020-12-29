@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesService} from "../../services/movies.service";
-import { Movie } from '../../services/movie';
+import { Movie } from '../../models/movie';
 
 
 @Component({
@@ -9,17 +9,18 @@ import { Movie } from '../../services/movie';
   styleUrls: ['./movie-card.component.css']
 })
 export class MovieCardComponent implements OnInit {
-  public movies : Movie[] = []
+  movies = []
+  posterImage = "https://image.tmdb.org/t/p/w300"
   constructor(private _moviesService: MoviesService) { 
-    console.log("hhhh");
+   
   }
 
   ngOnInit(){
     this._moviesService.getPopularMovie().subscribe(data => {
-      this.movies = data;
+      this.movies = data.results;
     });
   
-  
   }
+  
 
 }

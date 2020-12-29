@@ -2,27 +2,24 @@
 <div class="ml-4 mr-4">
 <div class="content">
   <div fxLayout="row wrap" fxLayoutGap="16px grid">
-    <div fxFlex="25%" *ngFor="let movie of movies">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let movie of movies">
         <!-- Card -->
 <mdb-card  >
-  <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+  <div class="view rgba-white-slight waves-light" style="height: 300px;" mdbWavesEffect>
     <!-- Card img -->
-    <mdb-card-img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"  alt="Card image cap"></mdb-card-img>
+    <mdb-card-img src={{posterImage+movie.poster_path}} alt="Card image cap" ></mdb-card-img>
     <a>
       <div class="mask"></div>
     </a>
   </div>
   <!--Card content-->
-  <mdb-card-body class="text-center">
+  <mdb-card-body class="text-center" style="height: 150px;"> 
     <!--Title-->
     <mdb-card-title>
-      <h4 style="text-align: center;">{{movies.title}}</h4>
+      <h4 style="text-align: center;">{{movie.title}}</h4>
     </mdb-card-title>
 
-    <!--Text-->
-    <mdb-card-text style="text-align: center;"> Some quick example text to build on the card title and make up the bulk of the card's
-      content.
-    </mdb-card-text>
+    
     <a href="#0" class="btn btn-link  btn-danger"><span style="font-family: Monaco; font-weight: bold;">WATCH NOW</span></a>
   </mdb-card-body>
 </mdb-card>
