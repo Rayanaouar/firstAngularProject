@@ -1,0 +1,30 @@
+
+<div class="ml-4 mr-4">
+<div class="content">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let movie of movies">
+        <!-- Card -->
+<mdb-card  >
+  <div class="view rgba-white-slight waves-light" style="height: 300px;" mdbWavesEffect>
+    <!-- Card img -->
+    <mdb-card-img src={{posterImage+movie.poster_path}} alt="Card image cap" ></mdb-card-img>
+    <a>
+      <div class="mask"></div>
+    </a>
+  </div>
+  <!--Card content-->
+  <mdb-card-body class="text-center" style="height: 150px;"> 
+    <!--Title-->
+    <mdb-card-title>
+      <h4 style="text-align: center;">{{movie.title}}</h4>
+    </mdb-card-title>
+
+    
+    <a href="#0" class="btn btn-link  btn-danger"><span style="font-family: Monaco; font-weight: bold;">WATCH NOW</span></a>
+  </mdb-card-body>
+</mdb-card>
+<!-- Card -->
+    </div>
+  </div>
+  </div>
+</div>
